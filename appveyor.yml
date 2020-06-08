@@ -1,0 +1,9 @@
+image: Visual Studio 2019
+platform:
+  - x86
+  - x64
+configuration: Release
+
+build_script:
+  - cmd: cmake -H. -B_build -DBUILD_TESTS=ON
+  - cmd: cmake --build _build
